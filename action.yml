@@ -1,0 +1,27 @@
+name: "Deployment Status"
+description: "Set the status of a pull request deployment preview. Based on deliverybot/deployment-status"
+author: "TrustLayer"
+branding:
+  color: gray-dark
+  icon: arrow-up-circle
+inputs:
+  state:
+    description: "Deployment status to set the action as"
+    default: "pending"
+  token:
+    description: "Github repository token"
+  log-url:
+    description: "Log url location"
+  deployment-id:
+    description: "Optional deployment ID to provide, if this action was triggered outside of a `deployment` event."
+  ref:
+    description: "Pull request branch ref"
+  description:
+    description: "Descriptive message about the deployment state"
+  environment:
+    description: "Name for the target deployment environment, which can be changed when setting a deploy status."
+  environment-url:
+    description: "URL for accessing your environment."
+runs:
+  using: "node12"
+  main: "dist/index.js"

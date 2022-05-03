@@ -1,4 +1,4 @@
-name: "Deployment Status"
+name: "GitHub Deployment Status"
 description: "Set the status of a pull request deployment preview. Based on deliverybot/deployment-status"
 author: "TrustLayer"
 branding:

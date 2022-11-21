@@ -23,5 +23,5 @@ inputs:
   environment-url:
     description: "URL for accessing your environment."
 runs:
-  using: "node12"
+  using: "node16"
   main: "dist/index.js"
